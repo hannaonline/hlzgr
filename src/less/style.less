@@ -1,0 +1,336 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	height: 100%;
+	background: #efe3d9;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	word-break: break-all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+.wrap{
+	max-width: 450px;
+	margin:0 auto;
+	position: relative;
+	height:100%;
+	overflow: hidden;
+	background: url('../img/bg.jpg') no-repeat;
+	background-position:center center;
+	background-size:100% 100%;
+	min-height: 500px;
+	.logo{
+		width:118px;
+		height:30px;
+		display: block;
+		background: url('../img/logo-cctv.png') no-repeat center top;
+		background-size:100% auto;
+		margin-top:3.5%;
+		margin-left:5%;
+	}
+	.title{
+		height:50px;
+		width:auto;
+		margin:4% auto 0;
+		img{
+			height:100%;
+			width:auto;
+			margin:0 auto;
+			display: block;
+		}
+	}
+	.wechat{
+		width:82%;
+		margin:1% auto;
+		position: relative;
+		img{
+			width:100%;
+			height:auto;
+			display: block;
+		}
+		.user-photo{
+			position: absolute;
+			width: 27%;
+			right: 15%;
+			bottom: 15%;
+		    z-index: 1;
+		    border-radius: 6px;
+		    -webkit-border-radius: 6px;
+			img{
+				width:100%;
+				display: block;
+				height:auto;
+				border-radius: 6px;
+		    	-webkit-border-radius: 6px;
+			}
+			.cover{
+				position: absolute;
+				z-index: 1;
+				left:-4px;
+				right:-4px;
+				bottom:-4px;
+				top:-4px;
+				display: block;
+				background: url('../img/user-wp.png') no-repeat center center;
+				background-size:100% 100%;
+			}
+		}
+	}
+	.info{
+		width:70%;
+		height:auto;
+		margin:1% auto 0;
+		img{
+			width:100%;
+			height:auto;
+			display: block;
+			margin:0 auto;
+		}
+	}
+	.btn-arrow{
+		width:26px;
+		height:36px;
+		margin:1.2% auto 0.4%;
+		background: url('../img/icon-arrow.png') no-repeat center center;
+		background-size:100% auto;
+		-webkit-animation: shake 1.8s ease-out infinite;
+		animation: shake 1.8s ease-out infinite;
+	}
+	.btn-create{
+		width:155px;
+		height:60px;
+		background: url('../img/btn-create.png') no-repeat center top;
+		background-size:100% auto;
+		display: block;
+		margin:0 auto;
+		text-indent: -9999px;
+	}
+	.canvas-wrap{
+		position: absolute;
+		width:450px;
+		height:800px;
+		background: #efe3d9;
+		left:120%;
+		padding:7px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		.cvs-inner{
+			width:100%;
+			height:100%;
+			background: url('../img/bg.jpg') no-repeat;
+			background-position:center center;
+			background-size:100% 100%;
+			border:1px solid #676767;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			overflow: hidden;
+			text-align: center;
+			.cvs-logo{
+					width:118px;
+					height:auto;
+					display: block;
+					margin-top:3.5%;
+					margin-left:5%;
+    				img{
+    					width:100%;
+    					height:auto;
+    					display: block;
+    				}
+			}
+			.cvs-title{
+				width:76%;
+				height:auto;
+				margin:10% auto 0;
+				img{
+					width:100%;
+    				height:auto;
+    				display: block;
+				}
+			}
+			.wechat{
+				width:88%;
+				margin:0 auto;
+			}
+			.cvs-press-info{
+				width:50%;
+				height:auto;
+				margin:-1% auto 0;
+				img{
+					width:100%;
+    				height:auto;
+    				display: block;
+				}
+			}
+			.cvs-pic-mess{
+				width:75%;
+				height:auto;
+				margin:3% auto 0;
+				img{
+					width:100%;
+					height:auto;
+					display: block;
+					margin:0 auto;
+				}
+			}
+			.user-name{
+				position: relative;
+				z-index: 1;
+				color:#000;
+				font-size:50px;
+				text-align: center;
+				overflow:hidden;
+				white-space: nowrap;
+				margin:0 auto;
+				font-weight: bold;
+				line-height:1.1;
+				max-width:6em;
+				display: inline-block;
+				background:url('../img/text-bg.png') no-repeat center center;
+				background-size:100% 100%;
+				padding:1.5% 0;
+				margin-top:3%;
+			}
+		}
+	}
+	.drop{
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index:2;
+		background: rgba(0,0,0,0.5);
+		.pic-title{
+			width:76%;
+			height:30px;
+			margin:0 auto 0;
+			background: url('../img/press-info.png') no-repeat center center;
+			background-size:100% auto;
+		}
+		.btn-share{
+			display: block;
+			text-indent:-9999px;
+			width:40%;
+			height:60px;
+			margin:0 auto;
+			background: url('../img/btn-share.png') no-repeat top center;
+			background-size:100% auto;
+		}
+		.btn-qrcode{
+			display: block;
+			text-indent:-9999px;
+			width:90%;
+			height:50px;
+			margin:0 auto;
+			background: url('../img/btn-qrcode.png') no-repeat center center;
+			background-size:100% auto;
+		}
+		.img-box{
+			width:69%;
+			margin:0 auto 2%;
+			display: block;
+			img{
+				width:100%;
+				height:auto;
+				display: block;
+			}
+		}
+	}
+}
+
+.modal{
+	position: fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:999;
+	background: rgba(0,0,0,0.68);
+	img{
+		width:85%;
+		max-width: 414px;
+		display: block;
+		height:auto;
+		margin:10px;
+		float:right;
+	}
+}
+
+@-webkit-keyframes shake {
+	0%{
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	
+	50%{
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+
+	100%{
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	
+}
+
+@keyframes shake {
+	0%{
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	
+	50%{
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+	
+	100%{
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	
+}
+@media screen and (min-width: 320px) and (max-width: 361px){
+	.wrap .title{
+		height:48px;
+		margin:0 auto;
+	}
+	.wrap .btn-create{
+		width:150px;
+	}
+	.wrap .drop .img-box{
+		width:67%;
+	}
+}
+@media screen and (max-height: 536px){
+	.wrap .drop .img-box{
+		width:60%;
+	}
+}
+@media screen and (max-width: 320px){
+	.wrap .title{
+		height:40px;
+	}
+	.wrap .btn-create{
+		width:140px;
+	}
+	.wrap .drop .img-box{
+		width:65%;
+	}
+}
